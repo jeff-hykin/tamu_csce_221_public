@@ -25,9 +25,9 @@ BSTree read_from_file(string file_name)
 int main()
 {
   try {
-    // use data-files
+    // use data_files
     for(int i = 1; i <= 12; i++) {
-      string dir = "data-files/" + std::to_string(i);
+      string dir = "data_files/" + std::to_string(i);
       BSTree l = read_from_file(dir + "l");
       cout << "average search time linear " << i << " "
 	   << l.get_average_search_time() << endl;
