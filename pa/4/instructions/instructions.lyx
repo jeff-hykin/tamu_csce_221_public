@@ -3528,7 +3528,7 @@ status open
 
 \begin_layout Plain Layout
 
-auto pair = node_set.insert(make_pair(label, Vertex<T>{label, 0}));
+auto pair = node_set.insert(make_pair(label, Vertex<T>(label)));
 \end_layout
 
 \begin_layout Plain Layout

@@ -388,7 +388,7 @@ unordered_map<T, Vertex<T>> node_set;
 //returns a pair<unordered_map<T, Vertex<T>>::iterator, bool> 
 //  where iterator is a reference to the object in the hash table,
 //  bool is true if this is the first time insert, false otherwise 
-auto pair = node_set.insert(make_pair(label, Vertex<T>{label, 0}));
+auto pair = node_set.insert(make_pair(label, Vertex<T>(label)));
 
 bool newItem = pair.second; //true if this is the first item with the given key 
 
